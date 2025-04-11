@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact – La Flamme Française</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f8f8; margin: 0; padding: 0; color: #333; }
+        header { background: #111; color: white; text-align: center; padding: 30px 20px; }
+        form { background: white; max-width: 600px; margin: 40px auto; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 20px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 8px; border-radius: 4px; border: 1px solid #ccc; font-size: 14px; }
+        button { background: #e25822; color: white; padding: 12px 20px; border: none; margin-top: 20px; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #c7461c; }
+        footer { text-align: center; padding: 20px; font-size: 14px; background: #222; color: white; }
+        a { color: #e25822; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="infos.html">Infos techniques & FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="mailto:tom.martin1876@gmail.com">Devenir partenaire</a>
+</nav>
+
+
+<header>
+    <h1>Contact – La Flamme Française</h1>
+    <p><a href="index.html" style="color:#ccc;">← Retour à l'accueil</a></p>
+</header>
+
+<form action="mailto:tom.martin1876@gmail.com" method="post" enctype="text/plain">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="Nom" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="message">Votre message :</label>
+    <textarea id="message" name="Message" rows="6" required></textarea>
+
+    <button type="submit">Envoyer</button>
+</form>
+
+<footer>
+    &copy; 2024 La Flamme Française – Tom Martin
+</footer>
+
+</body>
+</html>
