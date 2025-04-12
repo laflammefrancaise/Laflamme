@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Flamme Française</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    nav {
+      background-color: #222;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .main-image {
+      text-align: center;
+      background-color: #111;
+      padding: 30px 0;
+    }
+    .main-image img {
+      max-width: 300px;
+      height: auto;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section.light {
+      background-color: #fff;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .feature {
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 200px;
+    }
+    .cta {
+      background-color: #ffe0bb;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .cta button {
+      background-color: #f26100;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Flamme Française</h1>
+    <p>La chaleur maîtrisée. Le style affirmé. Le feu accessible.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="infos.html">Infos techniques & FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="precommande.html">Précommande</a>
+    <a href="devis.html">Devis</a>
+    <a href="espacepro.html">Espace Pro</a>
+  </nav>
+
+  <div class="main-image">
+    <img src="modele_alpha.png" alt="Poêle Modèle Alpha" />
+  </div>
+
+  <div class="section light">
+    <h2>À propos</h2>
+    <p>Nous créons des poêles à granulés 100% français, pensés pour être accessibles, performants, élégants et durables.</p>
+  </div>
+
+  <div class="section">
+    <h2>Le Modèle Alpha en un clin d'œil</h2>
+    <div class="features">
+      <div class="feature">+85% de rendement<br><small>Haute performance</small></div>
+      <div class="feature">Fabriqué en France<br><small>Composants européens</small></div>
+      <div class="feature">Silencieux & design<br><small>Style affirmé</small></div>
+      <div class="feature">Éligible MaPrimeRénov’<br><small>Installation facilitée</small></div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Vous êtes installateur ?</h2>
+    <p>Rejoignez notre programme partenaire et testez le Modèle Alpha en avant-première.</p>
+    <button onclick="location.href='precommande.html'">Je veux devenir partenaire</button>
+  </div>
+
+  <footer>
+    © 2024 La Flamme Française – Tom Martin | Contact : tom.martin1876@gmail.com
+  </footer>
+</body>
+</html>
