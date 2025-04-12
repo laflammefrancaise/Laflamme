@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demander un devis - La Flamme Française</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #111;
+            overflow: hidden;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 40px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: grid;
+            gap: 20px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+        button {
+            background-color: #e75e00;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            margin: auto;
+        }
+        button:hover {
+            background-color: #d04f00;
+        }
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>La Flamme Française</h1>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="infos.html">Infos techniques & FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="precommande.html">Précommande</a>
+    <a href="devis.html">Devis</a>
+</nav>
+
+<main>
+    <h1>Demander un devis</h1>
+    <p>Complétez ce formulaire pour obtenir un devis personnalisé pour le Modèle Alpha.</p>
+    <form>
+        <input type="text" name="nom" placeholder="Nom complet" required>
+        <input type="email" name="email" placeholder="Adresse email" required>
+        <input type="tel" name="telephone" placeholder="Numéro de téléphone">
+        <select name="profil" required>
+            <option value="">Je suis...</option>
+            <option value="particulier">Particulier</option>
+            <option value="professionnel">Professionnel</option>
+        </select>
+        <textarea name="message" rows="6" placeholder="Précisez votre besoin..."></textarea>
+        <button type="submit">Envoyer ma demande</button>
+    </form>
+</main>
+
+<footer>
+    &copy; 2024 La Flamme Française – Tom Martin
+</footer>
+
+</body>
+</html>
