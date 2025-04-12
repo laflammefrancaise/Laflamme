@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Demande de devis – La Flamme Française</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 40px; color: #333; }
+        .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #B22222; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background-color: #B22222; color: white; padding: 12px 20px; border: none; border-radius: 4px; margin-top: 20px; width: 100%; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #8B1A1A; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Demander un devis</h2>
+        <form action="mailto:tom.martin1876@gmail.com" method="POST" enctype="text/plain">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="Nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="Téléphone">
+
+            <label for="type">Je suis :</label>
+            <select id="type" name="Je suis">
+                <option value="Particulier">Particulier</option>
+                <option value="Installateur">Installateur</option>
+                <option value="Revendeur">Revendeur</option>
+            </select>
+
+            <label for="projet">Type de projet :</label>
+            <select id="projet" name="Type de projet">
+                <option value="Installation neuve">Installation neuve</option>
+                <option value="Remplacement">Remplacement</option>
+                <option value="Autre">Autre</option>
+            </select>
+
+            <label for="cp">Code postal :</label>
+            <input type="text" id="cp" name="Code postal">
+
+            <label for="modele">Modèle souhaité :</label>
+            <select id="modele" name="Modèle">
+                <option value="Modèle Alpha">Modèle Alpha</option>
+            </select>
+
+            <label for="message">Message (optionnel) :</label>
+            <textarea id="message" name="Message" rows="4"></textarea>
+
+            <button type="submit">Demander mon devis</button>
+        </form>
+    </div>
+</body>
+</html>
